@@ -1,0 +1,35 @@
+(Benchmarks) ➜  ~/machine-learning-notes/benchmark/pytorch-m1-gpu (main)
+$ python lenet-mnist.py --device "mps"
+torch 1.14.0.dev20221017
+device mps
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+100%|█████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 57487346.42it/s]
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+100%|█████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 31052472.14it/s]
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+100%|█████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:00<00:00, 29134140.46it/s]
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+100%|███████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 41595040.98it/s]
+Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+
+Epoch: 001/001 | Batch 0000/0421 | Loss: 2.3098
+Epoch: 001/001 | Batch 0100/0421 | Loss: 0.2646
+Epoch: 001/001 | Batch 0200/0421 | Loss: 0.1437
+Epoch: 001/001 | Batch 0300/0421 | Loss: 0.1010
+Epoch: 001/001 | Batch 0400/0421 | Loss: 0.0734
+Time / epoch without evaluation: 0.09 min
+Epoch: 001/001 | Train: 97.32% | Validation: 97.75% | Best Validation (Ep. 001): 97.75%
+Time elapsed: 0.15 min
+Total Training Time: 0.15 min
+Test accuracy 97.40%
+Total Time: 0.17 min
